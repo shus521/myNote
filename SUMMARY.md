@@ -17,3 +17,4 @@
 * [破解激活](破解激活.md)
 * [操作系统](操作系统.md)
     * [windows](windows.md)
+    * [linux](linux.md)
