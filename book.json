@@ -1,5 +1,8 @@
 {
     "plugins": [
-        "highlight"
+        "highlight",
+        "sql-table",
+        "api",
+        "cloud-image"
     ]
 }

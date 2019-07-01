@@ -18,7 +18,8 @@
 #     2.  pull然后push
 #########################################################################
 #!/bin/bash 
-if [ ! -d "/root/syncGit/tyss" ]; then
+cd /root/syncGit
+if [ ! -d "tyss" ]; then
     git clone git@git.kancloud.cn:shus521/tyss.git
     cd tyss
     git remote add hub git@github.com:shus521/myNote.git
