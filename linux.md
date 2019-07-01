@@ -1,3 +1,4 @@
+[TOC]
 ## 定时同步看云文档到github
 1. 同步脚本
 ```
@@ -32,4 +33,7 @@ git push hub master
 ```
 */30 * * * * root /root/syncGit/syncGit.sh >> /root/syncGit/sync.log
 ```
+## 目录和文件操作
+查找目录：`find /（查找范围） -name '查找关键字' -type d`
+查找文件：`find /（查找范围） -name 查找关键字`
 
