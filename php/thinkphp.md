@@ -21,3 +21,4 @@ if (!$User->autoCheckToken($_POST)){
  // 令牌验证错误
  }
 ```
+5. 在linux中，语言包检测不到驼峰命名的语言文件。如`testDemoController.class.php`控制器对应的语言包应为`testdemo.php`
