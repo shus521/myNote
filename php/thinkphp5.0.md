@@ -40,3 +40,31 @@ User::scope(function($query){
 ~~~
 $user->thinkphp()->get();
 ~~~
+## 删除数据
+1. 根据主键调用静态方法
+~~~
+User::destroy(1);
+// 支持批量删除多个数据
+User::destroy('1,2,3');
+User::destroy([1,2,3]);
+~~~
+2. 条件删除
+~~~
+User::destroy(['status' => 0]);
+~~~
+3. 闭包删除
+~~~
+User::destroy(function($query){
+    $query->where('id','>',10);
+});
+~~~
+4. 根据查询条件删除
+~~~
+User::where('id','>',10)->delete();
+~~~
+5. 根据模型删除
+~~~
+$user = User::get(1);
+$user->delete();
+~~~
+
