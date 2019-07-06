@@ -44,3 +44,5 @@ for (var i in obj) {
 17. 闭包：定义在函数内部的函数
 18. `eval`命令接受一个字符串作为参数，并将这个字符串当作语句执行。
 19. 清空数组的方法:length设置为0
+20. addEventListener和onclick的区别？
+addEventListener可以添加多个监听事件，多次触发；onclick只触发一次
