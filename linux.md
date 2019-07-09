@@ -38,3 +38,8 @@ git push hub master
 查找目录：`find /（查找范围） -name '查找关键字' -type d`
 查找文件：`find /（查找范围） -name 查找关键字`
 
+
+## 备用
+1. 在shell中不小心按`ctrl+S`后终端无反应，按`ctrl_q`可恢复
+
+
