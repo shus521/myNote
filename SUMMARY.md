@@ -6,6 +6,7 @@
     * [数组](php/数组.md)
 * [数据库](mysql.md)
     * [mysql](mysql/技巧.md)
+    * [oracle](oracle.md)
 * [前端](前端.md)
     * [备忘](前端/记录.md)
     * [js](前端/js.md)
