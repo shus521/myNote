@@ -6,6 +6,7 @@
     * [数组](php/数组.md)
     * [php7](php7.md)
         * [特性](特性.md)
+        * [编译安装](编译安装.md)
 * [数据库](mysql.md)
     * [mysql](mysql/技巧.md)
     * [oracle](oracle.md)
