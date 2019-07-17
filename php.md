@@ -45,3 +45,8 @@ xdebug.remote_host= localhost　　#指定远程调试的主机名
 xdebug.remote_port = 9000　　#指定远程调试的端口号
 xdebug.idekey = PHPSTORM　　#指定传递给DBGp调试器处理程序的IDE Key
 ```
+## 获取本机ipve地址
+```
+$ip = gethostbynamel($_ENV['COMPUTERNAME']);
+$ip = $ip[count($ip) - 1];
+```

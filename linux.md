@@ -37,9 +37,27 @@ git push hub master
 ## 目录和文件操作
 查找目录：`find /（查找范围） -name '查找关键字' -type d`
 查找文件：`find /（查找范围） -name 查找关键字`
-
+## gdb使用
+### 定义
+GDB是基于UNIX/Linux下的，基于命令行的调试工具，当程序发生coredump，可以通过GDB从core文件中复现场景，定位问题。
+### 安装
+1. 检查是否安装`rpm -qa | grep gdb`
+2. 安装文档系统`yum install ncurses-devel`
+3. 安装gdb
+```
+wget http://ftp.gnu.org/gnu/gdb/gdb-8.3.tar.gz
+tar -zxvf gdb-8.3.tar.gz
+cd gdb-8.3
+./configure
+make && make install
+```
+4. 错误1:`A compiler with support for C++11 language features is required.`
+方案1:`yum install -y gcc gcc-c++`
+错误2:`makeinfo: command not found`
+方案2:`yum install texinfo`
 
 ## 备用
 1. 在shell中不小心按`ctrl+S`后终端无反应，按`ctrl_q`可恢复
+2. 方便快捷下载上传文件`yum install lrzsz`
 
 
