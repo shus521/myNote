@@ -31,20 +31,20 @@ class ezcReflectionFunction extends ReflectionFunction {
 ![](https://i.vgy.me/JHlIpD.png)
 2. 修改php.ini配置文件
 ```
-[xdebug]
-zend_extension="E:\IM\im_webserver\php\ext\php_xdebug-2.5.5-5.6-vc11.dll"　　#指定Xdebug扩展文件的绝对路径
-xdebug.auto_trace=on　　#启用代码自动跟踪
-xdebug.collect_params=on　　#允许收集传递给函数的参数变量
-xdebug.collect_return=on　　#允许收集函数调用的返回值
-xdebug.trace_output_dir="F:\AppServ\Xdebug"　　#指定堆栈跟踪文件的存放目录
-xdebug.profiler_enable=on　　#是否启用Xdebug的性能分析，并创建性能信息文件
-xdebug.profiler_output_dir="F:\AppServ\Xdebug"　　#指定性能分析信息文件的输出目录
-xdebug.remote_enable = on　　#是否开启远程调试
-xdebug.remote_handler = dbgp　　#指定远程调试的处理协议
-xdebug.remote_host= localhost　　#指定远程调试的主机名
-xdebug.remote_port = 9000　　#指定远程调试的端口号
-xdebug.idekey = PHPSTORM　　#指定传递给DBGp调试器处理程序的IDE Key
+[Xdebug]
+zend_extension="E:\IM\im_webserver\php\ext\php_xdebug-2.5.5-5.6-vc11.dll" 
+xdebug.remote_enable=1
+#与remote_connect_back不能同时开启
+xdebug.remote_host="localhost" 
+xdebug.remote_port=9001
+ #与remote_host不能同时开启
+;xdebug.remote_connect_back = 1 
+xdebug.remote_handler="dbgp"
+xdebug.idekey=PHPSTORM
 ```
+![](https://i.vgy.me/BucSQO.png)
+![](https://i.vgy.me/PffE4p.png)![](https://i.vgy.me/nXaMMW.png)
+
 ## 获取本机ipve地址
 ```
 $ip = gethostbynamel($_ENV['COMPUTERNAME']);
