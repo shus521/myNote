@@ -9,3 +9,20 @@
 | docker logs 容器id | 查看容器内的输出|
 | docker stop 容器id | 停止运行着的docker容器 | 
 | -P | 容器端口映射到主机端口 |
+| docker pull nginx | 拉取镜像|
+|docker rm mynginx| 删除容器|
+|docker inspect 容器ID或容器名 |grep '"IPAddress"'|查看容器ip|
+
+## nginx
+```
+docker run --name mynginx -p 80:80 -v /var/www:/var/www -v /usr/local/nginx/conf/conf.d:/etc/nginx/conf.d -d nginx
+```
+注：
+1. 若无目录，该命令生成的nginx.conf为文件夹，需手动生成
+2. nginx.conf需拷贝一份别处的
+## php
+```
+docker pull phpdockerio/php7-fpm
+docker run -p 9000:9000 --name  myphp-fpm -v ~/nginx/www:/www -v $PWD/php/conf:/usr/local/etc/php -v $PWD/php/logs:/phplogs   -d phpdockerio/php7-fpm
+```
+
