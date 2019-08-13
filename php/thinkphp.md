@@ -22,3 +22,4 @@ if (!$User->autoCheckToken($_POST)){
  }
 ```
 5. 在linux中，语言包检测不到驼峰命名的语言文件。如`testDemoController.class.php`控制器对应的语言包应为`testdemo.php`
+6. add方法有第三个参数，设为true可以执行存在则更新，不存在则新增。实际是调用replace方法处理数据。
