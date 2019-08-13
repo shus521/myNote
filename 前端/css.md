@@ -6,4 +6,10 @@
 3、为父元素或者子元素声明浮动（float：left；可用）  
 4、为父元素添加border（border:1px solid transparent可用）  
 5、为父元素或者子元素声明绝对定位
-3. 
+3. 设置流布局
+~~~
+column-count: auto;
+column-width: 300px;
+column-gap: 0;
+~~~
+4. 首行缩进`text-indent:2em`

@@ -24,6 +24,7 @@ top:
 ~~~
 11. 字符串转数值`parseInt()`,一个个字符转，遇到不能转，返回转好的
    Number()遇到不能转返回NaN
+    parseInt第二个参数填要转成的进制
 12. 字符串转浮点数`parseFloat()`
 13. 判断布尔值`isFinite()`
 14.  `btoa()`：任意值转为 Base64 编码; `atob()`：Base64 编码转为原来的值

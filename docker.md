@@ -12,10 +12,12 @@
 | docker pull nginx | 拉取镜像|
 |docker rm mynginx| 删除容器|
 |docker inspect 容器ID或容器名 |grep '"IPAddress"'|查看容器ip|
+|docker system prune|可以用于清理磁盘，删除关闭的容器、无用的数据卷和网络|
+|docker exec -it mynginx /bin/bash|进入正在运行的容器内部|
 
 ## nginx
 ```
-docker run --name mynginx -p 80:80 -v /var/www:/var/www -v /usr/local/nginx/conf/conf.d:/etc/nginx/conf.d -d nginx
+docker run --name mynginx -p 80:80 -v $PWD/www:/var/www -v $PWD/conf/conf.d:/etc/nginx/conf.d -d nginx
 ```
 注：
 1. 若无目录，该命令生成的nginx.conf为文件夹，需手动生成
