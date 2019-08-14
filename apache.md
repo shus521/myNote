@@ -39,3 +39,4 @@ CustomLog "|bin/rotatelogs.exe -l logs/access-%Y-%m-%d.log 86400" common
 ```
     httpd -k install -n httpd
 ```
+3. 到系统服务中启动(设置自动启动)
