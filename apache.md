@@ -33,3 +33,9 @@ CustomLog "|bin/rotatelogs.exe -l logs/access-%Y-%m-%d.log 86400" common
 </IfModule>
 ```
 ![](https://i.vgy.me/zBfrOf.png)
+## windows下apache做成服务
+1. 进入apache bin目录
+2. 
+```
+    httpd -k install -n httpd
+```
