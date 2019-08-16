@@ -17,7 +17,7 @@
 
 ## nginx
 ```
-docker run --name mynginx -p 80:80 -v $PWD/www:/var/www -v $PWD/conf/conf.d:/etc/nginx/conf.d -d nginx
+docker run --name mynginx -p 80:80 -v $PWD/www:/var/www -v $PWD/conf/conf.d:/etc/nginx/conf.d -v $PWD/logs:/var/log/nginx -d nginx
 ```
 注：
 1. 若无目录，该命令生成的nginx.conf为文件夹，需手动生成
