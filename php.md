@@ -50,4 +50,20 @@ xdebug.idekey=PHPSTORM
 $ip = gethostbynamel($_ENV['COMPUTERNAME']);
 $ip = $ip[count($ip) - 1];
 ```
+## 
+~~~
+class a {
+    protected $a = "";
+    public function __construct($msg) {
+        $this->a = $msg;
+    }
+
+    public static function echo1($msg) {
+        $static = new static($msg);
+        print_r($static->a);
+   }
+}
+
+a::echo1('333');
+~~~
 
