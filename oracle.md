@@ -8,3 +8,6 @@
 `grant create session,dba to angeos;`
 ## 删除用户
 `drop user angeos cascade;`
+## php5.6支持oracle
+链接：https://pan.baidu.com/s/1i2g-sE2u9fxn6vXrI_AVRw 
+提取码：`4hq2` 
