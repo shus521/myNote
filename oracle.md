@@ -11,3 +11,4 @@
 ## php5.6支持oracle
 链接：https://pan.baidu.com/s/1i2g-sE2u9fxn6vXrI_AVRw 
 提取码：`4hq2` 
+php7需要到`https://pecl.php.net/package/oci8`根据详细信息去下载
