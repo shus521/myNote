@@ -109,3 +109,17 @@ EXCLUSION 约束确保如果使用指定的运算符在指定列或表达式上�
 *   索引不应该使用在频繁操作的列上
 ****
 1. TRUNCATE TABLE 与 DELETE 具有相同的效果，但是由于它实际上并不扫描表，所以速度更快。 此外，TRUNCATE TABLE 可以立即释放表空间，而不需要后续 VACUUM 操作，这在大型表上非常有用。
+## 锁[LOCK]
+1. 排它锁（Exclusive Locks）和共享锁（Share Locks）
+2. 
+~~~
+    LOCK [ TABLE ]
+    name
+     IN
+    lock_mode
+~~~
+~~~
+    LOCK TABLE company1 IN ACCESS EXCLUSIVE MODE;
+~~~
+3. lock_mode包含`ACCESS SHARE，ROW SHARE， ROW EXCLUSIVE， SHARE UPDATE EXCLUSIVE， SHARE，SHARE ROW EXCLUSIVE，EXCLUSIVE，ACCESS EXCLUSIVE`
+4. 一旦获得了锁，锁将在当前事务的其余时间保持。没有解锁表命令；锁总是在事务结束时释放
