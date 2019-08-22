@@ -31,6 +31,7 @@ DROP DATABASE 只能由超级管理员或数据库拥有者执行。
 *****
 1. 查看表`\d`
 2. 查看表信息`\d tablename`
+3. 列出表中所有索引`\di`
 ## 模式(SCHEMA)
 ### 说明
 可以看成是表的集合，可以包含视图、索引、据类型、函数和操作符等
@@ -69,8 +70,7 @@ CREATE TABLE myschema.mytable (
 3. 在 WITH 子句中可以使用自身输出的数据
 #### 递归
 ```
-    with RECURSIVE cte as 
-    ( 
+    with RECURSIVE cte as ( 
             select a.id,a.name,a.pid from tb a where id='002' 
             union all  
             select k.id,k.name,k.pid  from tb k inner join cte c on c.id = k.pid 
@@ -88,3 +88,24 @@ CREATE TABLE myschema.mytable (
 ```
 ### HAVING
 1. HAVING 子句必须放置于 GROUP BY 子句后面，ORDER BY 子句前面
+## 约束
+NOT NULL、UNIQUE、PRIMARY KEY、FOREIGN KEY
+### CHECK约束
+~~~
+    CREATE TABLE COMPANY5(
+       ID INT PRIMARY KEY     NOT NULL,
+       NAME           TEXT    NOT NULL,
+       AGE            INT     NOT NULL,
+       ADDRESS        CHAR(50),
+       SALARY         REAL    CHECK(SALARY > 0)
+    );
+~~~
+### EXCLUSION 约束
+EXCLUSION 约束确保如果使用指定的运算符在指定列或表达式上比较任意两行，至少其中一个运算符比较将返回 false 或 null。
+## 索引
+*   索引不应该使用在较小的表上。
+*   索引不应该使用在有频繁的大批量的更新或插入操作的表上。
+*   索引不应该使用在含有大量的 NULL 值的列上。
+*   索引不应该使用在频繁操作的列上
+****
+1. TRUNCATE TABLE 与 DELETE 具有相同的效果，但是由于它实际上并不扫描表，所以速度更快。 此外，TRUNCATE TABLE 可以立即释放表空间，而不需要后续 VACUUM 操作，这在大型表上非常有用。
