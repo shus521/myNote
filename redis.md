@@ -3,6 +3,7 @@
 2. 获取所有配置`config get *`
 3. 修改配置`CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE`
 4. 参数说明
+5. 查看redis安装目录`CONFIG GET dir`
 5. 
 |   配置项  | 说明    |
 | --- | --- |
@@ -19,6 +20,8 @@
 1. set key value
 2. get key
 3. del key
+4. 判断键是否存在`EXISTS key`
+5. 给键设置过期时间 `EXPIRE key seconds`
 ### string
 1. 一个键最多能存储512M
 2. 二进制安全
@@ -36,7 +39,31 @@
 ~~~
 ### Set（集合）
 string类型的无序集合
+集合内元素的唯一性，第二次插入的元素将被忽略
 ~~~
     sadd runoob redis
     smembers runoob
 ~~~
+### zset(sorted set：有序集合)
+string类型元素的集合,且不允许重复的成员
+每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序成员是唯一的,但分数(score)却可以重复
+~~~
+    zadd runoob 0 redis
+    ZRANGEBYSCORE runoob 0 1000
+~~~
+### HyperLogLog(基数)
+去重，计数
+```
+    pfadd key value
+    pfcount key
+```
+## 订阅
+创建频道`SUBSCRIBE redisChat`
+给频道发消息`PUBLISH redisChat "Redis is a great caching technique"`
+## 备份和恢复
+备份`save`、`BGSAVE`
+恢复:只需将备份文件 (dump.rdb) 移动到 redis 安装目录并启动服务即可
+### 缓存雪崩
+过期时间相同，大批缓存同时过期产生
+### 缓存穿透
+数据库中没有的数据，缓存中自然也没有，导致每次都去数据库查
