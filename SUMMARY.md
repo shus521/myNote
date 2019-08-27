@@ -39,3 +39,4 @@
 * [git](git.md)
 * [正则表达式](正则表达式.md)
 * [ps](ps.md)
+* [lua](lua.md)
