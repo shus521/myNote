@@ -1,4 +1,7 @@
 [TOC]
+## 环境变量
+1. 查看环境变量`env`、`printenv`
+2. 查看其他进程的环境变量`cat /proc/$PID/environ | tr '\0' '\n'`
 ## 定时同步看云文档到github
 1. 同步脚本
 ```
