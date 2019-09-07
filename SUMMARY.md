@@ -13,6 +13,7 @@
     * [thinkphp6.0](thinkphp6.0.md)
     * [代码简洁之道](代码简洁之道.md)
     * [编译](编译.md)
+    * [laravel](laravel.md)
 * [数据库](mysql.md)
     * [mysql](mysql/技巧.md)
     * [oracle](oracle.md)
