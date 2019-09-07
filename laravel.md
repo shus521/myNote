@@ -26,7 +26,8 @@ npm install
 2. 测试文件放置于tests目录下
 3. Unit单元测试；Feature功能测试
 4. 单元测试和功能测试类都继承自`Tests\TestCase`基类
-## [配置.md](./配置.md)
+## [配置](./配置.md)
+## [路由](./路由.md)
 ## 创建表和模型
 1. `php artisan make:model -m Models/Post`
 命令完成了两件事
