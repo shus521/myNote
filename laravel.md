@@ -26,6 +26,7 @@ npm install
 2. 测试文件放置于tests目录下
 3. Unit单元测试；Feature功能测试
 4. 单元测试和功能测试类都继承自`Tests\TestCase`基类
+## [配置.md](./配置.md)
 ## 创建表和模型
 1. `php artisan make:model -m Models/Post`
 命令完成了两件事
@@ -56,8 +57,6 @@ php artisan migrate:fresh --seed
 2. `--model` 选项可用于指定当模型工厂被创建时生成模型的名称。这个选项将用给定的模型预填充生成的模型工厂文件
 3. 生成新的填充文件`php artisan make:seeder PostsTableSeeder`
 4. 运行数据库填充命令`php artisan db:seed`
-## 配置文件
-1. 可通过助手函数`config()`来访问配置项
 ## 控制器
 1. 生成空的控制器`php artisan make:controller BlogController`
 ## 路由
