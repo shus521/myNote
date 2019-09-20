@@ -50,7 +50,7 @@ xdebug.idekey=PHPSTORM
 $ip = gethostbynamel($_ENV['COMPUTERNAME']);
 $ip = $ip[count($ip) - 1];
 ```
-## 
+## static
 ~~~
 class a {
     protected $a = "";
