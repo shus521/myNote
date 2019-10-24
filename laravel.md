@@ -60,7 +60,5 @@ php artisan migrate:fresh --seed
 4. 运行数据库填充命令`php artisan db:seed`
 ## 控制器
 1. 生成空的控制器`php artisan make:controller BlogController`
-## 路由
-1. 查看应用中所有路由`php artisan route:list`
 ## 111
 1. 重定向`redirect()`
