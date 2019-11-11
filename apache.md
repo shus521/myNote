@@ -40,3 +40,26 @@ CustomLog "|bin/rotatelogs.exe -l logs/access-%Y-%m-%d.log 86400" common
     httpd -k install -n httpd
 ```
 3. 到系统服务中启动(设置自动启动)
+## apache配置多端口多站点
+1. 修改`httpd.conf`
+```
+1. 去掉LoadModule vhost_alias_module modules/mod_vhost_alias.so前面的#标志启用该模块
+2. 去掉Include conf/extra/httpd-vhosts.conf前的#标识加载该文件配置
+3. 添加Listen 81标识把81端口添加监听
+```
+2. 在httpd_vhosts.conf中追加配置
+```
+ <VirtualHost *:81>
+    DocumentRoot "E:\xampp\htdocs\zentaopms\www"
+    ServerName zentao.com
+    <Directory "E:\xampp\htdocs\zentaopms\www">
+    Options FollowSymLinks ExecCGI
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    Require all granted
+    </Directory>
+    </VirtualHost>
+```
+3. 重启apache
+
