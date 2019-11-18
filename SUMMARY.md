@@ -34,6 +34,7 @@
     * [css](前端/css.md)
     * [electron](electron.md)
     * [vue](vue.md)
+    * [语法糖](js语法糖.md)
 * [操作系统](操作系统.md)
     * [windows](windows.md)
     * [linux](linux.md)
