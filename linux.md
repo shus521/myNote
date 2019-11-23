@@ -37,6 +37,7 @@ git push hub master
 ```
 */30 * * * * root /root/syncGit/syncGit.sh >> /root/syncGit/sync.log
 ```
+或者敲入命令`crontab -e`进行编辑
 ## 目录和文件操作
 查找目录：`find /（查找范围） -name '查找关键字' -type d`
 查找文件：`find /（查找范围） -name 查找关键字`

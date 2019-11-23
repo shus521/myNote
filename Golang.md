@@ -1,3 +1,7 @@
+## 国内镜像
+1. `go get -u github.com/gpmgo/gopm`安装gopm
+2. `gopm get -g golang.org/x/net` 带g参数下载到GOPATH，不带g下载到vendor
+## 技巧
 1. go使用包package作为基本单位管理代码(php命名空间)
 2. import其他包来导入依赖包(php use)
 3. ***不得导入无用包***
