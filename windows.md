@@ -42,5 +42,6 @@ sudo apt-get remove --purge openssh-server   ## 先删ssh
 sudo apt-get install openssh-server          ## 在安装ssh
 sudo rm /etc/ssh/ssh_config                  ## 删配置文件，让ssh服务自己想办法链接
 sudo service ssh --full-restart
+sudo systemctl enable ssh                    ## 设置ssh开机自启动
 ```
 3. 使用xshell连接
