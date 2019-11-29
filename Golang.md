@@ -1,6 +1,11 @@
+[TOC]
 ## 国内镜像
 1. `go get -u github.com/gpmgo/gopm`安装gopm
 2. `gopm get -g golang.org/x/net` 带g参数下载到GOPATH，不带g下载到vendor
+## import
+1. 加下划线如`import _ blog`表示只为了执行init()函数，不能调用包的其他方法
+2. 加点如`import . blog`导入之后调用这个包方法的时候可以直接调用，省略包名
+3. 别名`import f fmt`将fmt别名为f，调用时通过f调用
 ## 技巧
 1. go使用包package作为基本单位管理代码(php命名空间)
 2. import其他包来导入依赖包(php use)
