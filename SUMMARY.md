@@ -37,6 +37,7 @@
     * [语法糖](js语法糖.md)
 * [操作系统](操作系统.md)
     * [windows](windows.md)
+        * [bat](bat.md)
     * [linux](linux.md)
 * [git](git.md)
 * [apache](apache.md)
