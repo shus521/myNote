@@ -2,6 +2,7 @@
 ## 环境变量
 1. 查看环境变量`env`、`printenv`
 2. 查看其他进程的环境变量`cat /proc/$PID/environ | tr '\0' '\n'`
+3. 设置环境变量`vim ~/.bash_profile`，`source ~/.bash_profile`
 ## 定时同步看云文档到github
 1. 同步脚本
 ```
@@ -63,5 +64,6 @@ make && make install
 ## 备用
 1. 在shell中不小心按`ctrl+S`后终端无反应，按`ctrl_q`可恢复
 2. 方便快捷下载上传文件`yum install lrzsz`
+3. 修改hosts `vim /etc/hosts`
 
 
