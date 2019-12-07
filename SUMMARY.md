@@ -38,6 +38,7 @@
 * [操作系统](操作系统.md)
     * [windows](windows.md)
         * [bat](bat.md)
+        * [快捷键](快捷键.md)
     * [linux](linux.md)
 * [git](git.md)
 * [docker](docker.md)
