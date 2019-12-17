@@ -40,6 +40,7 @@
         * [bat](bat.md)
         * [快捷键](快捷键.md)
     * [linux](linux.md)
+        * [sed](linux/sed.md)
 * [git](git.md)
 * [docker](docker.md)
 * [正则表达式](正则表达式.md)

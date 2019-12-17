@@ -65,5 +65,5 @@ make && make install
 1. 在shell中不小心按`ctrl+S`后终端无反应，按`ctrl_q`可恢复
 2. 方便快捷下载上传文件`yum install lrzsz`
 3. 修改hosts `vim /etc/hosts`
-
+## [sed](/./linux/sed.md)
 
