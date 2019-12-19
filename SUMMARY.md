@@ -37,6 +37,7 @@
     * [vue](vue.md)
     * [语法糖](js语法糖.md)
     * [colorui使用笔记](前端/colorui使用笔记.md)
+    * [微信小程序](微信小程序.md)
 * [操作系统](操作系统.md)
     * [windows](windows.md)
         * [bat](bat.md)
