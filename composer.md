@@ -1,3 +1,4 @@
+[toc]
 1. 配置阿里云packagelist地址`composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/`
 ## 安装使用组件
 1. php组件获取网站:[PackageList](https://packagist.org/)
@@ -7,4 +8,9 @@
 5. 在项目代码中引入vendor下面的`autoload.php`
 ```
     require 'vendor/autoload.php';
+```
+## linux安装composer
+```
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 ```

@@ -10,3 +10,5 @@
 方案:`ssh-keygen -R 192.168.0.40`
 ## 添加ssh
 `ssh-keygen -t rsa -C "youremail@example.com"`
+## 本地commit多次的仓库关联新的远程仓库报错
+`git pull origin master --allow-unrelated-histories`
