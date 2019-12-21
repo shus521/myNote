@@ -28,6 +28,14 @@ $url = route('profile');
 // 重定向
 return redirect()->route('profile');
 ```
+### lumen路由配置nginx
+```
+        set   $root_path   '项目路径/public';
+        root   $root_path;
+        location / {
+                try_files $uri $uri/ /index.php?$query_string;
+        }
+```
 ## 数据查询
 * 自定义查询`->select(DB::raw('CONVERT(varchar(30),createtime,120) as createtime'))`
 ## 用户认证
