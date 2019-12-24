@@ -38,6 +38,12 @@ return redirect()->route('profile');
 ```
 ## 数据查询
 * 自定义查询`->select(DB::raw('CONVERT(varchar(30),createtime,120) as createtime'))`
+### 调用自定义函数
+```
+$sql='{ call Extend_WorkFlow_Insert('.$type.', '.(int)$userGroupId.', '.$days.') }';
+$conn=DB::connection('sqlsrv');
+$res = $conn->select($sql);
+```
 ## 用户认证
 * lumen是无状态的api，不支持session，必须使用无状态的机制来实现认证，如 API 令牌（Token）
 * 在使用 Lumen 的认证功能前，取消`bootstrap/app.php`文件中的`AuthServiceProvider`调用代码的注释。
@@ -60,6 +66,8 @@ return redirect()->route('profile');
 ```
 3. 执行`composer dump-autoload`
 4. 或者第二步和第三步换成在`bootstrap/app.php`中添加`require_once __DIR__.'../app/helpers.php';`
+## Eloquent
+1. `const UPDATED_AT = null;`关闭其中一个字段保留另一个
 ## jwt封装类
 ~~~
 <?php
