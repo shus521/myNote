@@ -9,12 +9,13 @@
 | docker logs 容器id | 查看容器内的输出|
 | docker stop 容器id | 停止运行着的docker容器 | 
 | -P | 容器端口映射到主机端口 |
+| docker search php| 搜索镜像|
 | docker pull nginx | 拉取镜像|
 |docker rm mynginx| 删除容器|
 |docker inspect 容器ID或容器名 |grep '"IPAddress"'|查看容器ip|
 |docker system prune|可以用于清理磁盘，删除关闭的容器、无用的数据卷和网络|
 |docker exec -it mynginx /bin/bash|进入正在运行的容器内部|
-
+## [docker-compose](./docker-compose.md)
 ## nginx
 ```
 docker run --name mynginx -p 80:80 -v $PWD/www:/var/www -v $PWD/conf/conf.d:/etc/nginx/conf.d -v $PWD/logs:/var/log/nginx -d nginx

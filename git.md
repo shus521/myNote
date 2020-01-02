@@ -12,3 +12,7 @@
 `ssh-keygen -t rsa -C "youremail@example.com"`
 ## 本地commit多次的仓库关联新的远程仓库报错
 `git pull origin master --allow-unrelated-histories`
+## 忽略已经提交过的文件
+```
+git update-index --assume-unchanged test/test.txt
+```
