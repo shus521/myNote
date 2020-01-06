@@ -12,6 +12,7 @@
         * [配置](配置.md)
         * [路由](路由.md)
         * [artisan控制台](artisan控制台.md)
+        * [eloquent](laravel/eloquent.md)
     * [composer](composer.md)
     * [加密解密](php/加密解密.md)
     * [小知识点](php/小知识点.md)

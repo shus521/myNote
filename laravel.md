@@ -60,20 +60,7 @@ php artisan migrate:fresh --seed
 4. 运行数据库填充命令`php artisan db:seed`
 ## 控制器
 1. 生成空的控制器`php artisan make:controller BlogController`
-## 缓存eloquent
-1. 使用composer装配缓存包`composer require rennokki/laravel-eloquent-query-cache`
-2. 在model中引入`use Rennokki\QueryCache\Traits\QueryCacheable;`
-3. `use QueryCacheable;`
-```
-    use Rennokki\QueryCache\Traits\QueryCacheable;
-    
-    class Podcast extends Model
-    {
-        use QueryCacheable;
-    
-        ...
-    }
-```
+## [eloquent](./laravel/eloquent)
 4. 可以设置`protected  $cacheFor  =  180;`在该model的所有查询中使用缓存
 5. 可以设置指定查询缓存`->cacheFor()`
 6. 避免命中缓存`->dontCache()`
