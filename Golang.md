@@ -42,3 +42,11 @@ const (
     w 
 )
 ```
+## windows编译linux包
+在cmd下执行
+```
+SET CGO_ENABLED=0
+SET GOOS=linux
+SET GOARCH=amd64
+go build main.go
+```
