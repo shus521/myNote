@@ -56,6 +56,7 @@
     * [问题思索](问题思索.md)
 * [Golang](Golang.md)
     * [测试](测试.md)
+    * [gui](gui.md)
 * [禅道二次开发](禅道二次开发.md)
 * [服务](服务.md)
     * [apache](apache.md)
