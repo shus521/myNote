@@ -29,6 +29,7 @@
     * [oracle](oracle.md)
     * [PostgreSQL](PostgreSQL.md)
     * [redis](redis.md)
+    * [sqlserver](sqlserver.md)
 * [前端](前端.md)
     * [备忘](前端/记录.md)
     * [js](前端/js.md)
