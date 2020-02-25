@@ -1,3 +1,4 @@
+## [安装](./nginx/安装.md)
 ## 配置二级域名
 1. 在域名提供商处添加域名解析![UTOOLS1575528069976.png](https://user-gold-cdn.xitu.io/2019/12/5/16ed4ca811c5dd5f?w=662&h=487&f=png&s=22366)
 2. 在`nginx.conf`中配置![UTOOLS1575528178694.png](https://user-gold-cdn.xitu.io/2019/12/5/16ed4cc273ff90e0?w=641&h=401&f=png&s=22908)

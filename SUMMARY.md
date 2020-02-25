@@ -64,3 +64,4 @@
         * [漏洞配置](apache/漏洞配置.md)
         * [http server优化](httpserver优化.md)
     * [nginx](nginx.md)
+        * [安装](nginx/安装.md)
