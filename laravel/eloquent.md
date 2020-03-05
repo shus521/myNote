@@ -19,5 +19,11 @@ $user->isDirty('name');  //若email被修改过，返回true，没有修改过�
 $user->getDirty(); //返回修改过的属性
 $user->getOriginal('name');  //查看修改前的值
 ```
+## 执行存储过程
+```
+$sql='{ call Extend_TuiFei_WorkFlowShenHe_Tigger('.$tableId.') }';
+$conn=DB::connection('sqlsrv');
+$res = $conn->update($sql);
+```
 
 1. 将查询结果中的某字段作为key`keyBy`
