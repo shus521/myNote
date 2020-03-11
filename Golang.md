@@ -42,6 +42,14 @@ const (
     w 
 )
 ```
+5. 比较浮点数是否相等不能直接比较
+```
+p := 0.00001
+// 判断 float_vlalue_1 与 float_value_2 是否相等
+if math.Dim(float64(float_value_1), float_value_2) < p {
+    fmt.Println("float_value_1 和 float_value_2 相等")
+}
+```
 ## windows编译linux包
 在cmd下执行
 ```
@@ -57,3 +65,4 @@ go build main.go
   
 所以为了拿到a的值，有个操作`*`，用来取出指针对应内存地址里存的值，所以当你fmt打印一下`*b`它会跟a一模一样
 * [读取和写入json配置文件](./读取和写入json配置文件.md)
+## [类](./Go/类.md)
