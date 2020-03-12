@@ -1,6 +1,7 @@
 [TOC]
 ## 配置代理
 ![UTOOLS1578376078632.png](https://user-gold-cdn.xitu.io/2020/1/7/16f7e8ba8d158d30?w=1041&h=719&f=png&s=38909)
+https://goproxy.io/
 ## import
 1. 加下划线如`import _ blog`表示只为了执行init()函数，不能调用包的其他方法
 2. 加点如`import . blog`导入之后调用这个包方法的时候可以直接调用，省略包名
@@ -66,3 +67,4 @@ go build main.go
 所以为了拿到a的值，有个操作`*`，用来取出指针对应内存地址里存的值，所以当你fmt打印一下`*b`它会跟a一模一样
 * [读取和写入json配置文件](./读取和写入json配置文件.md)
 ## [类](./Go/类.md)
+## [接口](./Go/接口.md)
