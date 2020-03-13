@@ -51,6 +51,17 @@ if math.Dim(float64(float_value_1), float_value_2) < p {
     fmt.Println("float_value_1 和 float_value_2 相等")
 }
 ```
+6. 解析http请求返回的json
+```
+res, err := http.Get(url)
+if err != nil {
+   fmt.Println(err)
+}
+defer res.Body.Close()
+body, _ := ioutil.ReadAll(res.Body)
+data := map[string]interface{}{}
+json.Unmarshal(result, &data)
+```
 ## windows编译linux包
 在cmd下执行
 ```
