@@ -201,3 +201,5 @@ class JwtBase {
 }
 
 ~~~
+### 报错`Call to a member function connection() on null`
+在`bootstrap\app.php`中，`$app->withEloquent();`的注释打开即可

@@ -27,3 +27,4 @@ $res = $conn->update($sql);
 ```
 
 1. 将查询结果中的某字段作为key`keyBy`
+2. `firstOrCreate`会报错，只需在`model`中添加`protected $fillable = ['openid'];`

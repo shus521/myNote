@@ -16,3 +16,5 @@
 ```
 git update-index --assume-unchanged test/test.txt
 ```
+## 合并两个不同的开始提交的仓库，会报错`refusing to merge unrelated histories`
+`git pull origin master --allow-unrelated-histories`
