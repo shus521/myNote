@@ -27,6 +27,7 @@
 * [算法及数据结构](算法.md)
     * [线性表结构](算法/线性表结构.md)
     * [插入排序](算法/insertSort.md)
+    * [冒泡排序](算法/冒泡排序.md)
 * [数据库](mysql.md)
     * [mysql](mysql/技巧.md)
     * [oracle](oracle.md)
