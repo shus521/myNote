@@ -1,4 +1,7 @@
 # php编程实录
+## 概述
+本文档为一个phper日常工作学习中的记录，欢迎交流。
+(PS:以下目录在github中方可正常打开，看云用户请使用看云自带的章节导航。访问github请点击[链接](https://github.com/shus521/myNote)跳转)
 ## 目录
 * [php](./php.md)
     - [安全](./安全.md)
