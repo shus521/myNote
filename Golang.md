@@ -79,5 +79,6 @@ go build main.go
 * [读取和写入json配置文件](./读取和写入json配置文件.md)
 ## [类](./Go/类.md)
 ## [接口](./Go/接口.md)
+## [gin](./Go/gin.md)
 ## 根据`json`生成`struct`
 ``https://mholt.github.io/json-to-go```
