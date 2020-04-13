@@ -129,6 +129,9 @@ form, _ := c.MultipartForm()
 ```
 ### HTML模板
 ### 中间件
+```
+r.Use(gin.Logger())
+```
 ### 热加载调试`Hot Reload`
 加载库
 ```

@@ -66,4 +66,6 @@ make && make install
 2. 方便快捷下载上传文件`yum install lrzsz`
 3. 修改hosts `vim /etc/hosts`
 ## [sed](/./linux/sed.md)
+## 常用命令
+1. `pstree`以树状图的方式展现进程之间的派生关系
 

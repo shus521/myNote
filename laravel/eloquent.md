@@ -28,3 +28,5 @@ $res = $conn->update($sql);
 
 1. 将查询结果中的某字段作为key`keyBy`
 2. `firstOrCreate`会报错，只需在`model`中添加`protected $fillable = ['openid'];`
+3. 修改`create_at`为其他字段`const CREATED_AT = 'create_time';`不需自动填充`const UPDATED_AT = null;`
+4. 自定义时间格式`protected $dateFormat = 'U';`

@@ -19,6 +19,7 @@ mv composer.phar /usr/local/bin/composer
 2. 更新扩展包版本：`composer update [vendor/package]`
 3. 移除扩展包：`composer remove [vendor/package]`
 4. 自动加载`composer dumpautoload`
+5. 查看`composer`全局安装路径`composer global about`
 ## 扩展包创建工具`package-builder`
 安装`composer global require overtrue/package-builder --prefer-source`
 新建扩展包`package-builder build weather`
