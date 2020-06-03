@@ -23,6 +23,7 @@
     * [编译](编译.md)
     * [语法糖](语法糖.md)
     * [lumen](php/lumen.md)
+    * [smarty](php/smarty.md)
 * [错题集](错题集.md)
 * [算法及数据结构](算法.md)
     * [线性表结构](算法/线性表结构.md)
@@ -75,3 +76,4 @@
     * [nginx](nginx.md)
         * [安装](nginx/安装.md)
 * [面试题库](面试题库.md)
+* [freeswitch](freeswitch.md)
