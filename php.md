@@ -33,14 +33,13 @@ class ezcReflectionFunction extends ReflectionFunction {
 ```
 [Xdebug]
 zend_extension="E:\IM\im_webserver\php\ext\php_xdebug-2.5.5-5.6-vc11.dll" 
-xdebug.remote_enable=1
-#与remote_connect_back不能同时开启
-xdebug.remote_host="localhost" 
-xdebug.remote_port=9001
- #与remote_host不能同时开启
-;xdebug.remote_connect_back = 1 
+xdebug.idekey = "vagrant"
+xdebug.default_enable = 1
+xdebug.remote_connect_back = 1
+xdebug.remote_port = 9001
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
 xdebug.remote_handler="dbgp"
-xdebug.idekey=PHPSTORM
 ```
 ![](https://i.vgy.me/BucSQO.png)
 ![](https://i.vgy.me/PffE4p.png)![](https://i.vgy.me/nXaMMW.png)
