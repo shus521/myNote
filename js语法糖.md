@@ -15,7 +15,7 @@
 ```
 //两数相加(处理浮点数不精确)
 function accAdd(arg1, arg2) {
-    var r1, r2, m, c;
+    let r1, r2, m, c;
     try {
         r1 = arg1.toString().split(".")[1].length;
     }
@@ -31,7 +31,7 @@ function accAdd(arg1, arg2) {
     c = Math.abs(r1 - r2);
     m = Math.pow(10, Math.max(r1, r2));
     if (c > 0) {
-        var cm = Math.pow(10, c);
+        let cm = Math.pow(10, c);
         if (r1 > r2) {
             arg1 = Number(arg1.toString().replace(".", ""));
             arg2 = Number(arg2.toString().replace(".", "")) * cm;
