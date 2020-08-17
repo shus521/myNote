@@ -52,6 +52,7 @@
         * [快捷键](快捷键.md)
     * [linux](linux.md)
         * [sed](linux/sed.md)
+        * [问题解决](linux/问题解决.md)
 * [git](git.md)
 * [docker](docker.md)
     * [docker-compose](docker-compose.md)
