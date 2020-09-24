@@ -68,3 +68,4 @@ make && make install
 ## [sed](/./linux/sed.md)
 ## 常用命令
 1. `pstree`以树状图的方式展现进程之间的派生关系
+2. `ssh -v -p 3306 127.0.0.1` 没有安装`telnet`情况下测试端口是否通
