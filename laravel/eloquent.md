@@ -30,3 +30,6 @@ $res = $conn->update($sql);
 2. `firstOrCreate`会报错，只需在`model`中添加`protected $fillable = ['openid'];`
 3. 修改`create_at`为其他字段`const CREATED_AT = 'create_time';`不需自动填充`const UPDATED_AT = null;`
 4. 自定义时间格式`protected $dateFormat = 'U';`
+## 软删除
+ 查询结果包含软删除的数据`$posts = Post::withTrashed()->get(); `
+查询结果只包含软删除的数据`$posts = Post::onlyTrashed()->get();`
